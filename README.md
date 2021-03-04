@@ -23,7 +23,7 @@
 
 - [Sobre](#about)
 - [Primeiros passos](#getting_started)
-- [Tecnologias usadas](#built_using)
+- [Feito com](#built_using)
 - [Licença](#license)
 
 ## 🧐 Sobre <a name = "about"></a>
@@ -48,7 +48,7 @@ yarn
 yarn dev
 ```
 
-## :computer: Conceitos utilizados <a name="built_using">
+## :computer: Feito com <a name="built_using">
 
 * NextJS
 * Js-cookie
