@@ -35,8 +35,8 @@ Projeto para lembrar os programadores de se exercitarem após periodos longos de
 Estas instruçōes te darão uma cópia funcional do projeto na sua máquina local para desenvolvimento e testes.
 
 ### Pré-requisitos
-- [NodeJS]("https://nodejs.org/")
-- [Yarn]("https://classic.yarnpkg.com/")
+- [NodeJS](https://nodejs.org/)
+- [Yarn](https://classic.yarnpkg.com/)
 
 ### Instalar as dependências
 ```sh
