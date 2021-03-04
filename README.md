@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">:clock3: Move.it</h1>
 
-## Getting Started
+<h2 align="center">
+	Projeto desenvolvido na Trilha de ReactJS da 4.º edição da <a href="https://rocketseat.com.br/">Next Level Week</a>.
+</h2>
 
-First, run the development server:
+<p align="center">
+	<a href="./LICENSE">
+		<img src="https://shields.io/github/license/viniciusrodrigues1a/nlw-04-moveit"></img>
+	</a>
+	<img src="https://shields.io/github/last-commit/viniciusrodrigues1a/nlw-04-moveit"></img>
+</p>
 
-```bash
-npm run dev
-# or
+<hr />
+	<p align="center">
+		<a target="_blank" href="https://moveit-seven-green.vercel.app/">
+		Veja o projeto live na Vercel
+		</a>
+	</p>
+<hr />
+
+## :page_facing_up: Índice
+
+- [Sobre](#about)
+- [Primeiros passos](#getting_started)
+- [Tecnologias usadas](#built_using)
+- [Licença](#license)
+
+## 🧐 Sobre <a name = "about"></a>
+
+Projeto para lembrar os programadores de se exercitarem após periodos longos de trabalho.
+
+## 🏁 Primeiros passos <a name = "getting_started"></a>
+
+Estas instruçōes te darão uma cópia funcional do projeto na sua máquina local para desenvolvimento e testes.
+
+### Pré-requisitos
+- [NodeJS]("https://nodejs.org/")
+- [Yarn]("https://classic.yarnpkg.com/")
+
+### Instalar as dependências
+```sh
+yarn
+```
+
+### Rodando a aplicação
+```sh
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## :computer: Conceitos utilizados <a name="built_using">
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+* NextJS
+* Js-cookie
+* React Context API
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## :memo: Licença <a name = "license"></a>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
