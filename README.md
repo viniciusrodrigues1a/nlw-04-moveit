@@ -19,6 +19,14 @@
 	</p>
 <hr />
 
+<h3 align="center">Demo</h3>
+
+<p align="center">
+	<img src="./.github/peek.gif"></img>
+</p>
+
+<hr />
+
 ## :page_facing_up: Índice
 
 - [Sobre](#about)
