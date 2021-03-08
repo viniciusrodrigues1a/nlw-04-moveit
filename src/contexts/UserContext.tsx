@@ -1,12 +1,14 @@
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect, ReactNode } from 'react';
 import Cookies from 'js-cookie';
 
 interface UserContextData {
   username: string;
+  login: (githubUser: string) => void;
 }
 
 interface UserContextProps {
   children: ReactNode;
+  username: string;
 }
 
 export const UserContext = createContext({} as UserContextData)
@@ -23,7 +25,7 @@ export function UserProvider({
 
   useEffect(() => {
     if (username) {
-      Cookies.set('username', username, {sameSite: 'LaX'});
+      Cookies.set('username', username, { sameSite: 'strict' });
     }
   }, [username]);
 
