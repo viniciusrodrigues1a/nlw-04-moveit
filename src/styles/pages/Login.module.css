@@ -1,0 +1,84 @@
+.container {
+  background-color: var(--blue); 
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginContent {
+  margin-left: 7.5rem;
+}
+
+.loginContent h1 {
+  margin-top: 6rem;
+  color: var(--white);
+  font-size: 2.25rem;
+  font-family: "Inter", sans-serif;
+}
+
+.loginDescriptionContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.loginDescriptionContainer > span {
+  margin-left: 1.5rem;
+  color: var(--blue-text);
+  width: 60%;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.loginInputContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.loginInputContainer > input {
+  background: linear-gradient(90deg, var(--blue-dark), rgba(73, 83, 184, 0.2));
+  padding: 1.75rem;
+  font-size: 1.25rem;
+  border: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.loginButtonActive {
+  background-color: var(--green) !important;
+}
+
+.loginInputContainer > button {
+  background-color: var(--blue-dark);
+  padding: calc(1.5rem - 0.5px) 1.5rem;
+  border: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.loginInputContainer > input::-webkit-placeholder {
+  color: #b2b9ff;
+  opacity: 1;
+}
+
+.loginInputContainer > input:-moz-placeholder {
+  /* Firefox 4 to 18 */
+
+  color: #b2b9ff;
+  opacity: 1;
+}
+
+.loginInputContainer > input::-moz-placeholder {
+  /* Firefox 19+ */
+
+  color: #b2b9ff;
+  opacity: 1;
+}
+
+.loginInputContainer > input::-ms-input-placeholder {
+  /* IE 10+ */
+
+  color: #b2b9ff;
+  opacity: 1;
+}

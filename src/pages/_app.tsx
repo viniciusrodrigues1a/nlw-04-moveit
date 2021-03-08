@@ -1,8 +1,12 @@
 import '../styles/global.css';
 
+import { UserProvider } from '../contexts/UserContext';
+
 function MyApp({ Component, pageProps }) {
   return (
-    <Component {...pageProps} />
+    <UserProvider username={pageProps.username}>
+      <Component {...pageProps} />
+    </UserProvider>
   )
 }
 
