@@ -30,16 +30,17 @@
   font-size: 1.25rem;
 }
 
-.loginInputContainer {
+.loginForm {
   display: flex;
   align-items: center;
   margin-top: 2.5rem;
 }
 
-.loginInputContainer > input {
+.loginForm > input {
   background: linear-gradient(90deg, var(--blue-dark), rgba(73, 83, 184, 0.2));
   padding: 1.75rem;
   font-size: 1.25rem;
+  color: var(--white);
   border: 0;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -49,7 +50,7 @@
   background-color: var(--green) !important;
 }
 
-.loginInputContainer > button {
+.loginForm > button {
   background-color: var(--blue-dark);
   padding: calc(1.5rem - 0.5px) 1.5rem;
   border: 0;
@@ -57,28 +58,28 @@
   border-bottom-right-radius: 5px;
 }
 
-.loginInputContainer > input::-webkit-placeholder {
-  color: #b2b9ff;
+.loginForm > input::-webkit-placeholder {
+  color: var(--blue-text);
   opacity: 1;
 }
 
-.loginInputContainer > input:-moz-placeholder {
+.loginForm > input:-moz-placeholder {
   /* Firefox 4 to 18 */
 
-  color: #b2b9ff;
+  color: var(--blue-text);
   opacity: 1;
 }
 
-.loginInputContainer > input::-moz-placeholder {
+.loginForm > input::-moz-placeholder {
   /* Firefox 19+ */
 
-  color: #b2b9ff;
+  color: var(--blue-text);
   opacity: 1;
 }
 
-.loginInputContainer > input::-ms-input-placeholder {
+.loginForm > input::-ms-input-placeholder {
   /* IE 10+ */
 
-  color: #b2b9ff;
+  color: var(--blue-text);
   opacity: 1;
 }

@@ -28,20 +28,19 @@ export default function Login() {
               </span>
             </div>
 
-            <div className={styles.loginInputContainer}>
+            <form className={styles.loginForm} onSubmit={() => login(user)}>
               <input 
                 placeholder="Digite seu username"
                 value={user}
                 onChange={e => setUser(e.target.value)}
               />
               <button 
-                type="button" 
-                onClick={() => login(user)}
+                type="submit"
                 className={user && styles.loginButtonActive}
               >
                 <img src="arrow-right.svg" alt="Entrar" />
               </button>
-          </div>
+          </form>
         </div>
       </div>
     </>
