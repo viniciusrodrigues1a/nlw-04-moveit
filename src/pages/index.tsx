@@ -1,19 +1,14 @@
 import { useContext, useState } from 'react';
-import { useRouter } from 'next/router';
 import { UserContext } from '../contexts/UserContext';
-
-import Redirect from '../components/Redirect';
 
 import styles from '../styles/pages/Login.module.css';
 
 export default function Login() {
-  const { login, username } = useContext(UserContext);
+  const { login } = useContext(UserContext);
   const [user, setUser] = useState("");
 
   return (
     <>
-      { username && <Redirect to="/dashboard" /> }
-
       <div className={styles.container}>
         <img src="login-background.svg" alt="Move.it" />
           <div className={styles.loginContent}>

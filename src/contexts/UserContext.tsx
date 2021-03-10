@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect, ReactNode } from 'react';
+import { useRouter } from 'next/router';
 import Cookies from 'js-cookie';
 
 interface UserContextData {
@@ -18,10 +19,23 @@ export function UserProvider({
   ...rest
 }: UserContextProps) {
   const [username, setUsername] = useState(rest.username ?? "");
+  const router = useRouter();
 
   useEffect(() => {
-    setUsername(Cookies.get('username'));
+    const usernameCookie = Cookies.get('username');
+
+    setUsername(usernameCookie);
+
+    if (usernameCookie) {
+      redirectTo('/dashboard');
+    } else {
+      redirectTo('/');
+    }
   }, []);
+
+  function redirectTo(to: string) {
+    router.push(to);
+  }
 
   useEffect(() => {
     if (username) {

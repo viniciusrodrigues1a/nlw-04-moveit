@@ -1,6 +1,4 @@
-import { useContext } from 'react';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import { GetServerSideProps } from 'next';
 
 import ExperienceBar from '../components/ExperienceBar';
@@ -8,11 +6,9 @@ import Profile from '../components/Profile';
 import CompletedChallenges from '../components/CompletedChallenges';
 import Countdown from '../components/Countdown';
 import ChallengeBox from '../components/ChallengeBox';
-import Redirect from '../components/Redirect';
 
 import { CountdownProvider } from '../contexts/CountdownContext';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
-import { UserContext } from '../contexts/UserContext';
 
 import styles from '../styles/pages/Home.module.css';
 
@@ -23,12 +19,8 @@ interface DashboardProps {
 }
 
 export default function Dashboard({ level, currentExperience, challengesCompleted }: DashboardProps) {
-  const { username } = useContext(UserContext);
-
   return (
     <>
-      { !username && <Redirect to="/" /> }
-
       <ChallengesProvider
         level={level}
         currentExperience={currentExperience}
