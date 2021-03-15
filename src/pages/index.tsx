@@ -7,6 +7,15 @@ export default function Login() {
   const { login } = useContext(UserContext);
   const [user, setUser] = useState("");
 
+  function handleLogin(e) {
+    e.preventDefault();
+    login(user);
+  }
+
+  function handleDemoLogin() {
+    login("Demo user");
+  }
+
   return (
     <>
       <div className={styles.container}>
@@ -23,7 +32,7 @@ export default function Login() {
               </span>
             </div>
 
-            <form className={styles.loginForm} onSubmit={() => login(user)}>
+            <form className={styles.loginForm} onSubmit={handleLogin}>
               <input 
                 placeholder="Digite seu username"
                 value={user}
@@ -36,6 +45,14 @@ export default function Login() {
                 <img src="arrow-right.svg" alt="Entrar" />
               </button>
           </form>
+
+          <button 
+            type="button"
+            className={styles.demoLoginButton}
+            onClick={handleDemoLogin}
+          >
+            Demo user
+          </button>
         </div>
       </div>
     </>

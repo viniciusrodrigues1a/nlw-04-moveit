@@ -9,7 +9,11 @@ export default function Profile() {
 
   return (
     <div className={styles.profileContainer}>
-      <img src={`https://github.com/${username}.png`} alt={username} />
+      <img 
+        src={`https://github.com/${username}.png`} 
+        alt={username} 
+        onError={e => (e.target as HTMLImageElement).src = "user.svg"}
+      />
       <div>
         <strong>{username}</strong>
         <p>

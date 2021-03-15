@@ -22,6 +22,10 @@ export function UserProvider({
   const router = useRouter();
 
   useEffect(() => {
+    if (username) {
+      Cookies.set('username', username, { sameSite: 'strict' });
+    }
+
     const usernameCookie = Cookies.get('username');
 
     setUsername(usernameCookie);
@@ -31,17 +35,11 @@ export function UserProvider({
     } else {
       redirectTo('/');
     }
-  }, []);
+  }, [username]);
 
   function redirectTo(to: string) {
     router.push(to);
   }
-
-  useEffect(() => {
-    if (username) {
-      Cookies.set('username', username, { sameSite: 'strict' });
-    }
-  }, [username]);
 
   function login(githubUser) {
     setUsername(githubUser);
