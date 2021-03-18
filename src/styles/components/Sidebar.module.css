@@ -1,0 +1,46 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+}
+
+.container > img {
+  margin-top: 2rem;
+}
+
+.iconsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.iconsContainer > div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconsContainer img {
+  margin: 1rem 0;
+  padding: 0 1.5rem;
+}
+
+.iconContainerActive:after {
+  content: "";
+  background-color: var(--blue);
+  width: 4px;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

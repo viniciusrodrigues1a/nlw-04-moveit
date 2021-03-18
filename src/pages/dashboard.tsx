@@ -6,6 +6,7 @@ import Profile from '../components/Profile';
 import CompletedChallenges from '../components/CompletedChallenges';
 import Countdown from '../components/Countdown';
 import ChallengeBox from '../components/ChallengeBox';
+import Sidebar from '../components/Sidebar';
 
 import { CountdownProvider } from '../contexts/CountdownContext';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
@@ -26,25 +27,30 @@ export default function Dashboard({ level, currentExperience, challengesComplete
         currentExperience={currentExperience}
         challengesCompleted={challengesCompleted}
       >
+
         <div className={styles.container}>
-          <Head>
-            <title>Início | move.it</title>
-          </Head>
-          <ExperienceBar />
+          <Sidebar />
 
-          <section>
-            <CountdownProvider>
-              <div>
-                <Profile />
-                <CompletedChallenges />
-                <Countdown />
-              </div>
+          <div className={styles.content}>
+            <Head>
+              <title>Início | move.it</title>
+            </Head>
+            <ExperienceBar />
 
-              <div>
-                <ChallengeBox />
-              </div>
-            </CountdownProvider>
-          </section>
+            <section>
+              <CountdownProvider>
+                <div>
+                  <Profile />
+                  <CompletedChallenges />
+                  <Countdown />
+                </div>
+
+                <div>
+                  <ChallengeBox />
+                </div>
+              </CountdownProvider>
+            </section>
+          </div>
         </div>
       </ChallengesProvider>
     </>
