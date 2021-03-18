@@ -1,5 +1,3 @@
-import logoImg from "../../public/logo.svg";
-
 import styles from "../styles/components/Sidebar.module.css";
 
 function Sidebar() {
