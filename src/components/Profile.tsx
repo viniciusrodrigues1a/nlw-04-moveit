@@ -12,7 +12,7 @@ export default function Profile() {
       <img 
         src={`https://github.com/${username}.png`} 
         alt={username} 
-        onError={e => (e.target as HTMLImageElement).src = "user.svg"}
+        onError={e => (e.target as HTMLImageElement).src = "icons/user.svg"}
       />
       <div>
         <strong>{username}</strong>

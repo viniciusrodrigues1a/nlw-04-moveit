@@ -19,14 +19,14 @@ export default function Login() {
   return (
     <>
       <div className={styles.container}>
-        <img src="login-background.svg" alt="Move.it" />
+        <img src="icons/login-background.svg" alt="Move.it" />
           <div className={styles.loginContent}>
-            <img src="logo.svg" alt="Move.it" />
+            <img src="icons/logo.svg" alt="Move.it" />
 
             <h1>Bem-vindo</h1>
 
             <div className={styles.loginDescriptionContainer}>
-              <img src="github.svg" alt="Github" />
+              <img src="icons/github.svg" alt="Github" />
               <span>
                 Faça login com seu Github para começar
               </span>
@@ -42,7 +42,7 @@ export default function Login() {
                 type="submit"
                 className={user && styles.loginButtonActive}
               >
-                <img src="arrow-right.svg" alt="Entrar" />
+                <img src="icons/arrow-right.svg" alt="Entrar" />
               </button>
           </form>
 
