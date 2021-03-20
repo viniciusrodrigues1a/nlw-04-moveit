@@ -5,6 +5,7 @@ import Cookies from 'js-cookie';
 interface UserContextData {
   username: string;
   login: (githubUser: string) => void;
+  logout: () => void;
 }
 
 interface UserContextProps {
@@ -45,8 +46,13 @@ export function UserProvider({
     setUsername(githubUser);
   }
 
+  function logout() {
+    Cookies.remove('username');
+    setUsername("");
+  }
+
   return (
-    <UserContext.Provider value={{ username, login }}>
+    <UserContext.Provider value={{ username, login, logout }}>
       {children}
     </UserContext.Provider>
   )
