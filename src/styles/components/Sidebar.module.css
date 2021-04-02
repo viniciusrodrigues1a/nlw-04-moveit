@@ -51,4 +51,11 @@
   background: #b8494e;
   padding: 0.75rem 1rem;
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoutButton > img {
+  rotate: 180deg;
 }
