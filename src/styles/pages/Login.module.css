@@ -2,11 +2,24 @@
   background-color: var(--blue); 
   display: flex;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 2rem 2rem 0 0;
+}
+
+.container > img {
+  width: 100%;
+  max-height: 100%;
+  margin-right: 7.5rem;
 }
 
 .loginContent {
-  margin-left: 7.5rem;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.loginContent > img {
+  width: 360px;
+  height: 76px;
 }
 
 .loginContent h1 {
@@ -105,4 +118,52 @@
 .demoLoginButton:hover {
   background-color: var(--green);
   color: var(--text);
+}
+
+@media (max-width: 81.25rem) {
+}
+
+@media (max-width: 48.5rem) {
+  .container {
+    padding: 2rem;
+  }
+
+  .loginContent {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .container > img {
+    display: none;
+  }
+}
+
+@media (max-width: 35.6875rem) {
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .logincontent {
+    width: 80%;
+  }
+
+  .loginContent > img {
+    width: 280px;
+    height: 59.1px;
+  }
+}
+
+@media (max-width: 28.5rem) {
+  .container {
+    padding: 4rem 2rem;
+  }
+
+  .loginContent {
+    width: 90%;
+  }
+
+  .loginContent > img {
+    width: 240px;
+    height: 50.6px;
+  }
 }
