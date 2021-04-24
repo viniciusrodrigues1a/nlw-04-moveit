@@ -18,3 +18,13 @@
   align-content: center;
   margin-top: 4rem;
 }
+
+@media (max-width: 68.5rem) {
+  .container section {
+    grid-template-columns: 1fr;
+  }
+
+  .container section div:first-child {
+    grid-row: 2;
+  }
+}

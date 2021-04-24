@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,4 +58,15 @@
 
 .logoutButton > img {
   rotate: 180deg;
+}
+
+@media (max-width: 29.75rem) {
+  .logoutButton {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .iconsContainer img {
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
 }
